@@ -1,0 +1,15 @@
+.NavItem {
+    text-transform: capitalize;
+    padding: 0.8rem 1.4rem;
+    transition: all 0.3s ease;
+
+    a.Active,
+    &:hover {
+        color: #e825c1;
+    }
+
+    a {
+        color: currentColor;
+        text-decoration: none;
+    }
+}

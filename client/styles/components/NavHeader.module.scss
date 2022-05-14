@@ -1,0 +1,17 @@
+.NavHeader {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 3.5rem;
+    display: flex;
+    align-items: center;
+
+    .Brand {
+        font-size: 2.4rem;
+    }
+
+    .NavList {
+        margin-left: auto;
+        display: flex;
+        list-style: none;
+        gap: 1.2rem;
+    }
+}

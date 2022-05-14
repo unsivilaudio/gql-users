@@ -1,0 +1,44 @@
+.AuthForm {
+    padding: 2rem 4rem;
+    border: 1px solid #adafaf;
+    border-radius: 1rem;
+
+    .Header {
+        font-size: 2.4rem;
+        font-weight: 400;
+        letter-spacing: 0.3rem;
+        text-align: center;
+    }
+
+    .Form {
+        width: 100%;
+
+        .Actions {
+            margin-top: 2.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                width: 100%;
+                max-width: 25rem;
+                font-size: 2.2rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            .HelpText {
+                cursor: pointer;
+                margin-top: 1rem;
+                font-size: 1.4rem;
+                font-style: italic;
+                text-align: center;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: #e825c1;
+                }
+            }
+        }
+    }
+}

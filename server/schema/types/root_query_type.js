@@ -1,4 +1,4 @@
-const { GraphQLObjectType, GraphQLID } = require('graphql');
+const { GraphQLObjectType } = require('graphql');
 const UserType = require('./user-type');
 
 const RootQueryType = new GraphQLObjectType({

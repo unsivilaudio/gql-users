@@ -1,10 +1,18 @@
 import React from 'react';
+import { useRoutes } from 'react-router-dom';
+
+import routes from '../routes';
+import classes from '../styles/components/App.module.scss';
+import NavHeader from './nav';
 
 const App = props => {
+    const rootRoutes = useRoutes(routes);
+
     return (
-        <div className='container'>
-            <h1>My new functional Component 2</h1>
-        </div>
+        <>
+            <NavHeader />
+            <div className={classes.App}>{rootRoutes}</div>
+        </>
     );
 };
 
