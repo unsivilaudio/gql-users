@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const USER_SIGN_IN = gql`
     mutation UserSignIn($email: String!, $password: String!) {
-        signin(email: $email, password: $password) {
+        login(email: $email, password: $password) {
             id
             email
         }
@@ -11,7 +11,7 @@ export const USER_SIGN_IN = gql`
 
 export const USER_SIGN_OUT = gql`
     mutation UserSignOut {
-        signout {
+        logout {
             id
             email
         }

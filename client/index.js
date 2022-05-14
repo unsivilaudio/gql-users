@@ -9,6 +9,7 @@ import App from './components/App';
 const client = new ApolloClient({
     uri: '/graphql',
     cache: new InMemoryCache(),
+    credentials: 'same-origin',
 });
 
 const Main = () => (

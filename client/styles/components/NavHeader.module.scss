@@ -6,6 +6,13 @@
 
     .Brand {
         font-size: 2.4rem;
+        display: flex;
+
+        span {
+            margin-left: 3px;
+            color: #ccc;
+            font-size: 1.6rem;
+        }
     }
 
     .NavList {
@@ -13,5 +20,19 @@
         display: flex;
         list-style: none;
         gap: 1.2rem;
+
+        .UserLogout,
+        .UserText {
+            padding: 0.8rem 1.4rem;
+        }
+
+        .UserLogout {
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #e825c1;
+            }
+        }
     }
 }

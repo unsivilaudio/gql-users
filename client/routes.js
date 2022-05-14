@@ -9,6 +9,7 @@ export default [
     },
     {
         path: '/auth',
+        label: 'auth',
         children: [
             {
                 path: 'signup',

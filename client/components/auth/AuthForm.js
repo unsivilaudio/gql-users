@@ -10,7 +10,10 @@ import classes from '../../styles/components/AuthForm.module.scss';
 const AuthForm = props => {
     const [authType, setAuthType] = useState('signup');
     const [authUser, { data, loading, error }] = useMutation(
-        authType === 'signin' ? USER_SIGN_IN : USER_SIGN_UP
+        authType === 'signin' ? USER_SIGN_IN : USER_SIGN_UP,
+        {
+            refetchQueries: ['FetchCurrentUser'],
+        }
     );
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -55,6 +58,8 @@ const AuthForm = props => {
                     email,
                     password,
                 },
+            }).then(() => {
+                navigate('/');
             });
         }
     }
